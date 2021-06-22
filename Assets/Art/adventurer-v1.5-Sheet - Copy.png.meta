@@ -1,0 +1,599 @@
+fileFormatVersion: 2
+guid: 1e0547bd18d393e42b01d03a4fcc3096
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1539459031344343297
+    second: adventurer-v1.5-Sheet - Copy_0
+  - first:
+      213: -2605372117706114834
+    second: adventurer-v1.5-Sheet - Copy_1
+  - first:
+      213: -3093263448366504505
+    second: adventurer-v1.5-Sheet - Copy_2
+  - first:
+      213: -2883394881978420449
+    second: adventurer-v1.5-Sheet - Copy_3
+  - first:
+      213: 7219136036674500237
+    second: adventurer-v1.5-Sheet - Copy_4
+  - first:
+      213: -8489450783197210730
+    second: adventurer-v1.5-Sheet - Copy_5
+  - first:
+      213: 195189593944425262
+    second: adventurer-v1.5-Sheet - Copy_6
+  - first:
+      213: 5011916611885644417
+    second: adventurer-v1.5-Sheet - Copy_7
+  - first:
+      213: -4186373479669494463
+    second: adventurer-v1.5-Sheet - Copy_8
+  - first:
+      213: -5866069649041089969
+    second: adventurer-v1.5-Sheet - Copy_9
+  - first:
+      213: -786406520008572598
+    second: adventurer-v1.5-Sheet - Copy_10
+  - first:
+      213: -6430126027134430521
+    second: adventurer-v1.5-Sheet - Copy_11
+  - first:
+      213: 8765012204319268009
+    second: adventurer-v1.5-Sheet - Copy_12
+  - first:
+      213: -1213567187507395113
+    second: adventurer-v1.5-Sheet - Copy_13
+  - first:
+      213: -3685313308722420913
+    second: adventurer-v1.5-Sheet - Copy_14
+  - first:
+      213: 8324065331316239515
+    second: adventurer-v1.5-Sheet - Copy_15
+  - first:
+      213: -432745320176612475
+    second: adventurer-v1.5-Sheet - Copy_16
+  - first:
+      213: 7743136525383193963
+    second: adventurer-v1.5-Sheet - Copy_17
+  - first:
+      213: -7136896526023988151
+    second: adventurer-v1.5-Sheet - Copy_18
+  - first:
+      213: -9035559050487229905
+    second: adventurer-v1.5-Sheet - Copy_19
+  - first:
+      213: 8861806304820093685
+    second: adventurer-v1.5-Sheet - Copy_20
+  - first:
+      213: 4583810486181490287
+    second: adventurer-v1.5-Sheet - Copy_21
+  - first:
+      213: 2120783656746378027
+    second: adventurer-v1.5-Sheet - Copy_22
+  - first:
+      213: 138551392490737784
+    second: adventurer-v1.5-Sheet - Copy_23
+  - first:
+      213: -1955244692634627706
+    second: adventurer-v1.5-Sheet - Copy_24
+  - first:
+      213: 7495426481730693754
+    second: adventurer-v1.5-Sheet - Copy_25
+  - first:
+      213: 8268987382178355692
+    second: adventurer-v1.5-Sheet - Copy_26
+  - first:
+      213: -9001455011066515379
+    second: adventurer-v1.5-Sheet - Copy_27
+  - first:
+      213: 516941851260509629
+    second: adventurer-v1.5-Sheet - Copy_28
+  - first:
+      213: 6902028242144576889
+    second: adventurer-v1.5-Sheet - Copy_29
+  - first:
+      213: -3510281596114645978
+    second: adventurer-v1.5-Sheet - Copy_30
+  - first:
+      213: 8070963255418792605
+    second: adventurer-v1.5-Sheet - Copy_31
+  - first:
+      213: -4004896114770073932
+    second: adventurer-v1.5-Sheet - Copy_32
+  - first:
+      213: -8731443072414780945
+    second: adventurer-v1.5-Sheet - Copy_33
+  - first:
+      213: 5944358571731374536
+    second: adventurer-v1.5-Sheet - Copy_34
+  - first:
+      213: 5077827428172333776
+    second: adventurer-v1.5-Sheet - Copy_35
+  - first:
+      213: -8612912118945546099
+    second: adventurer-v1.5-Sheet - Copy_36
+  - first:
+      213: -1919245617380604525
+    second: adventurer-v1.5-Sheet - Copy_37
+  - first:
+      213: 1896096468281730849
+    second: adventurer-v1.5-Sheet - Copy_38
+  - first:
+      213: -8974524518647223617
+    second: adventurer-v1.5-Sheet - Copy_39
+  - first:
+      213: 1365102004574057556
+    second: adventurer-v1.5-Sheet - Copy_40
+  - first:
+      213: 1886825603389966452
+    second: adventurer-v1.5-Sheet - Copy_41
+  - first:
+      213: -5180568196901429527
+    second: adventurer-v1.5-Sheet - Copy_42
+  - first:
+      213: 4466330585536216007
+    second: adventurer-v1.5-Sheet - Copy_43
+  - first:
+      213: -2099800286807823768
+    second: adventurer-v1.5-Sheet - Copy_44
+  - first:
+      213: 3311117206836831332
+    second: adventurer-v1.5-Sheet - Copy_45
+  - first:
+      213: 6013195673918168680
+    second: adventurer-v1.5-Sheet - Copy_46
+  - first:
+      213: -6642751068005175492
+    second: adventurer-v1.5-Sheet - Copy_47
+  - first:
+      213: -6985713691912980758
+    second: adventurer-v1.5-Sheet - Copy_48
+  - first:
+      213: 3329804409727746748
+    second: adventurer-v1.5-Sheet - Copy_49
+  - first:
+      213: -247785137128625634
+    second: adventurer-v1.5-Sheet - Copy_50
+  - first:
+      213: -3880343529961858136
+    second: adventurer-v1.5-Sheet - Copy_51
+  - first:
+      213: -4846592765932296577
+    second: adventurer-v1.5-Sheet - Copy_52
+  - first:
+      213: -431164262867174712
+    second: adventurer-v1.5-Sheet - Copy_53
+  - first:
+      213: -964600661336811240
+    second: adventurer-v1.5-Sheet - Copy_54
+  - first:
+      213: -6166275866867427134
+    second: adventurer-v1.5-Sheet - Copy_55
+  - first:
+      213: -1105544859281113562
+    second: adventurer-v1.5-Sheet - Copy_56
+  - first:
+      213: 7762679759617497152
+    second: adventurer-v1.5-Sheet - Copy_57
+  - first:
+      213: -6927533156846687543
+    second: adventurer-v1.5-Sheet - Copy_58
+  - first:
+      213: -4626016029245345456
+    second: adventurer-v1.5-Sheet - Copy_59
+  - first:
+      213: -5897221466029346924
+    second: adventurer-v1.5-Sheet - Copy_60
+  - first:
+      213: -3909711523801717666
+    second: adventurer-v1.5-Sheet - Copy_61
+  - first:
+      213: 6144340731886175973
+    second: adventurer-v1.5-Sheet - Copy_62
+  - first:
+      213: 3266866615510045054
+    second: adventurer-v1.5-Sheet - Copy_63
+  - first:
+      213: -4352929441852773394
+    second: adventurer-v1.5-Sheet - Copy_64
+  - first:
+      213: -148490563820663467
+    second: adventurer-v1.5-Sheet - Copy_65
+  - first:
+      213: 8771484148035953516
+    second: adventurer-v1.5-Sheet - Copy_66
+  - first:
+      213: 356290627439510616
+    second: adventurer-v1.5-Sheet - Copy_67
+  - first:
+      213: 6070055393315100593
+    second: adventurer-v1.5-Sheet - Copy_68
+  - first:
+      213: -4873517630917316644
+    second: adventurer-v1.5-Sheet - Copy_69
+  - first:
+      213: -2860128408450772428
+    second: adventurer-v1.5-Sheet - Copy_70
+  - first:
+      213: -5636336071255517091
+    second: adventurer-v1.5-Sheet - Copy_71
+  - first:
+      213: 4162370620788524724
+    second: adventurer-v1.5-Sheet - Copy_72
+  - first:
+      213: 1510382471206775940
+    second: adventurer-v1.5-Sheet - Copy_73
+  - first:
+      213: 7151632355526471768
+    second: adventurer-v1.5-Sheet - Copy_74
+  - first:
+      213: 2655155661295276723
+    second: adventurer-v1.5-Sheet - Copy_75
+  - first:
+      213: -1261034356061339462
+    second: adventurer-v1.5-Sheet - Copy_76
+  - first:
+      213: -468594846053746839
+    second: adventurer-v1.5-Sheet - Copy_77
+  - first:
+      213: 4023716086660549434
+    second: adventurer-v1.5-Sheet - Copy_78
+  - first:
+      213: -3262574534987774809
+    second: adventurer-v1.5-Sheet - Copy_79
+  - first:
+      213: -6164551228434471449
+    second: adventurer-v1.5-Sheet - Copy_80
+  - first:
+      213: -4649194553373111488
+    second: adventurer-v1.5-Sheet - Copy_81
+  - first:
+      213: -4550677391644223804
+    second: adventurer-v1.5-Sheet - Copy_82
+  - first:
+      213: 5382896018518800950
+    second: adventurer-v1.5-Sheet - Copy_83
+  - first:
+      213: 6104539319189335309
+    second: adventurer-v1.5-Sheet - Copy_84
+  - first:
+      213: 6352969303973539180
+    second: adventurer-v1.5-Sheet - Copy_85
+  - first:
+      213: -4814096937028401519
+    second: adventurer-v1.5-Sheet - Copy_86
+  - first:
+      213: -4062088340437725483
+    second: adventurer-v1.5-Sheet - Copy_87
+  - first:
+      213: -249389881903627043
+    second: adventurer-v1.5-Sheet - Copy_88
+  - first:
+      213: -5298163746783761154
+    second: adventurer-v1.5-Sheet - Copy_89
+  - first:
+      213: 1659764687977945787
+    second: adventurer-v1.5-Sheet - Copy_90
+  - first:
+      213: 5755120067372125612
+    second: adventurer-v1.5-Sheet - Copy_91
+  - first:
+      213: 6809104624074385452
+    second: adventurer-v1.5-Sheet - Copy_92
+  - first:
+      213: 383262062348096111
+    second: adventurer-v1.5-Sheet - Copy_93
+  - first:
+      213: -8853621933481873475
+    second: adventurer-v1.5-Sheet - Copy_94
+  - first:
+      213: 7755668934408966342
+    second: adventurer-v1.5-Sheet - Copy_95
+  - first:
+      213: -8495581033001677901
+    second: adventurer-v1.5-Sheet - Copy_96
+  - first:
+      213: -3463835067713530738
+    second: adventurer-v1.5-Sheet - Copy_97
+  - first:
+      213: -8577756802607172721
+    second: adventurer-v1.5-Sheet - Copy_98
+  - first:
+      213: 4066169954681457270
+    second: adventurer-v1.5-Sheet - Copy_99
+  - first:
+      213: 6456779990214023048
+    second: adventurer-v1.5-Sheet - Copy_100
+  - first:
+      213: 6215007088068565734
+    second: adventurer-v1.5-Sheet - Copy_101
+  - first:
+      213: 5467237138216794062
+    second: adventurer-v1.5-Sheet - Copy_102
+  - first:
+      213: 1624830554761813357
+    second: adventurer-v1.5-Sheet - Copy_103
+  - first:
+      213: -9082229446694422049
+    second: adventurer-v1.5-Sheet - Copy_104
+  - first:
+      213: 2844192285570379214
+    second: adventurer-v1.5-Sheet - Copy_105
+  - first:
+      213: 2190948058890779401
+    second: adventurer-v1.5-Sheet - Copy_106
+  - first:
+      213: -186682158667257089
+    second: adventurer-v1.5-Sheet - Copy_107
+  - first:
+      213: -7965220405180408208
+    second: adventurer-v1.5-Sheet - Copy_108
+  - first:
+      213: 956124526141302480
+    second: adventurer-v1.5-Sheet - Copy_109
+  - first:
+      213: 5431507771322706798
+    second: adventurer-v1.5-Sheet - Copy_110
+  - first:
+      213: 4680008431212622490
+    second: adventurer-v1.5-Sheet - Copy_111
+  - first:
+      213: -4489995568184402183
+    second: adventurer-v1.5-Sheet - Copy_112
+  - first:
+      213: 8446359654375178694
+    second: adventurer-v1.5-Sheet - Copy_0
+  - first:
+      213: 3616245202167748732
+    second: adventurer-v1.5-Sheet - Copy_1
+  - first:
+      213: -7103394796634892693
+    second: adventurer-v1.5-Sheet - Copy_2
+  - first:
+      213: 6094698927946665091
+    second: adventurer-v1.5-Sheet - Copy_3
+  - first:
+      213: -5442995706556350706
+    second: adventurer-v1.5-Sheet - Copy_4
+  - first:
+      213: 1885317377719477619
+    second: adventurer-v1.5-Sheet - Copy_5
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: adventurer-v1.5-Sheet - Copy_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2309eac6e375b200800000000000000
+      internalID: 195189593944425262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: adventurer-v1.5-Sheet - Copy_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 480
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ab25faa97ed8540800000000000000
+      internalID: 5011916611885644417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: adventurer-v1.5-Sheet - Copy_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d0f27208307e5c0800000000000000
+      internalID: -4186373479669494463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: adventurer-v1.5-Sheet - Copy_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a9435ebb8879ea0800000000000000
+      internalID: -5866069649041089969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: adventurer-v1.5-Sheet - Copy_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 480
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4186d5cf6f1615f0800000000000000
+      internalID: -786406520008572598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: adventurer-v1.5-Sheet - Copy_11
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 480
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c298a3527a93c6a0800000000000000
+      internalID: -6430126027134430521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
