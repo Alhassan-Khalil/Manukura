@@ -45,6 +45,12 @@ TagManager:
   - name: background
     uniqueID: 2683666693
     locked: 0
+  - name: moonlight Background
+    uniqueID: 1831257331
+    locked: 0
+  - name: caveBackground
+    uniqueID: 3888634293
+    locked: 0
   - name: decrotion
     uniqueID: 840534271
     locked: 0
@@ -53,6 +59,12 @@ TagManager:
     locked: 0
   - name: platform
     uniqueID: 4073746285
+    locked: 0
+  - name: Moonlight city
+    uniqueID: 3211265305
+    locked: 0
+  - name: Cave
+    uniqueID: 2668640629
     locked: 0
   - name: Enemy
     uniqueID: 857004891
