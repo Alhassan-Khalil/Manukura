@@ -57,6 +57,14 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""67d965da-a74b-4fe3-9a59-7b3cf54484a1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -158,6 +166,17 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                     ""action"": ""DashDirection"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""62d722af-817a-4fdc-84c6-e5de9604fd51"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -199,6 +218,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         m_gameplay_Grab = m_gameplay.FindAction("Grab", throwIfNotFound: true);
         m_gameplay_Dash = m_gameplay.FindAction("Dash", throwIfNotFound: true);
         m_gameplay_DashDirection = m_gameplay.FindAction("DashDirection", throwIfNotFound: true);
+        m_gameplay_Interact = m_gameplay.FindAction("Interact", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -253,6 +273,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
     private readonly InputAction m_gameplay_Grab;
     private readonly InputAction m_gameplay_Dash;
     private readonly InputAction m_gameplay_DashDirection;
+    private readonly InputAction m_gameplay_Interact;
     public struct GameplayActions
     {
         private @PlayerActionControls m_Wrapper;
@@ -262,6 +283,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         public InputAction @Grab => m_Wrapper.m_gameplay_Grab;
         public InputAction @Dash => m_Wrapper.m_gameplay_Dash;
         public InputAction @DashDirection => m_Wrapper.m_gameplay_DashDirection;
+        public InputAction @Interact => m_Wrapper.m_gameplay_Interact;
         public InputActionMap Get() { return m_Wrapper.m_gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -286,6 +308,9 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 @DashDirection.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnDashDirection;
                 @DashDirection.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnDashDirection;
                 @DashDirection.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnDashDirection;
+                @Interact.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnInteract;
+                @Interact.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnInteract;
+                @Interact.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnInteract;
             }
             m_Wrapper.m_GameplayActionsCallbackInterface = instance;
             if (instance != null)
@@ -305,6 +330,9 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 @DashDirection.started += instance.OnDashDirection;
                 @DashDirection.performed += instance.OnDashDirection;
                 @DashDirection.canceled += instance.OnDashDirection;
+                @Interact.started += instance.OnInteract;
+                @Interact.performed += instance.OnInteract;
+                @Interact.canceled += instance.OnInteract;
             }
         }
     }
@@ -334,5 +362,6 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         void OnGrab(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
         void OnDashDirection(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
 }
