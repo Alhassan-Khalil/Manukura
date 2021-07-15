@@ -20,6 +20,8 @@ public class PlayerInputHandler : MonoBehaviour
     public bool DashInput { get; private set; }
     public bool DashInputStop { get; private set; }
 
+    public bool InteractInput { get; private set; }
+
     [SerializeField]
     private float inputHoldTime = 0.2f;
 
@@ -119,6 +121,16 @@ public class PlayerInputHandler : MonoBehaviour
         DashDirectionInput = Vector2Int.RoundToInt(RawDashDirectionInput.normalized);
     }
 
+
+    public void OnInteractInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            Debug.Log("ahm");
+        }
+    }
+
+   
     public void UseJumpInput() => JumpInput = false;
 
     public void UseDashInput() => DashInput = false;
