@@ -28,13 +28,6 @@ public class Teleporter : MonoBehaviour
             {
                 StartCoroutine(Teleport());
             }
-            if (transitionWhen == TransitionWhen.InteractPressed)
-            {
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    StartCoroutine(Teleport());
-                }
-            }
         }
     }
 
@@ -53,6 +46,20 @@ public class Teleporter : MonoBehaviour
     {
         if (!m_TransitioningGameObjectPresent)
             return;
+    }
+
+    public void InteractTeleport(GameObject obj)
+    {
+        Test_iPlayerManger manger = obj.GetComponent<Test_iPlayerManger>();
+        if (manger)
+        {
+            if(manger.KeyCount > 0)
+            {
+                manger.UseKey();
+                StartCoroutine(Teleport());
+
+            }
+        }
     }
 
 

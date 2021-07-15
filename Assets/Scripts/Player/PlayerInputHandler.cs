@@ -19,7 +19,6 @@ public class PlayerInputHandler : MonoBehaviour
     public bool GrabInput { get; private set; }
     public bool DashInput { get; private set; }
     public bool DashInputStop { get; private set; }
-
     public bool InteractInput { get; private set; }
 
     [SerializeField]
@@ -126,6 +125,7 @@ public class PlayerInputHandler : MonoBehaviour
     {
         if (context.started)
         {
+            InteractInput = true;
             Debug.Log("ahm");
         }
     }
