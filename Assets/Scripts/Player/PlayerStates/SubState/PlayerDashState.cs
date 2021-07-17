@@ -52,8 +52,8 @@ public class PlayerDashState : PlayerAbilitState
 
         if (!IsExitingState)
         {
-            player.Anim.SetFloat("yVelocity", player.CurrentVelocity.y);
-            player.Anim.SetFloat("xVelocity", Mathf.Abs(player.CurrentVelocity.x));
+            player.Anim.SetFloat("Yvelocity", player.CurrentVelocity.y);
+            player.Anim.SetFloat("Xvelocity", Mathf.Abs(player.CurrentVelocity.x));
 
 
             if (IsHolding)
