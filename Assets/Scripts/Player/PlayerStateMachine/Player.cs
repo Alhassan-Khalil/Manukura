@@ -10,7 +10,6 @@ public class Player : MonoBehaviour
     public PlayerStateMachine StateMachine { get; private set; }
     public PlayerIdelState IdelState { get; private set; }
     public PlayerMoveState MoveState { get; private set; }
-
     public PlayerJumpState JumpState { get; private set; }
     public PlayerInAirState InAirState { get; private set; }
     public PlayerLandState LandState { get; private set; }
@@ -23,6 +22,8 @@ public class Player : MonoBehaviour
     public PlayerCrouchIdelState CrouchIdelState { get; private set; }
     public PlayerCrouchMoveState CrouchMoveState { get; private set; }
     public BoxCollider2D MovementCollider { get; private set;}
+    public PlayerAttackState PrimaryAttackState { get; private set; }
+    public PlayerAttackState SecondaryAttackState { get; private set; }
 
     #endregion
 
@@ -31,6 +32,7 @@ public class Player : MonoBehaviour
     public PlayerInputHandler InputHandler { get; private set; }
     public Rigidbody2D RB { get; private set;}
     public Transform DashDirectionIndicator { get; private set; }
+    public PlayerInventory Inventory { get; private set; }
     #endregion
 
     #region Check transform
@@ -68,6 +70,9 @@ public class Player : MonoBehaviour
         DashState = new PlayerDashState(this, StateMachine, playerData, "inAir");//if i have diiferent anim i can add it
         CrouchIdelState = new PlayerCrouchIdelState(this, StateMachine, playerData, "crouchIdle");
         CrouchMoveState = new PlayerCrouchMoveState(this, StateMachine, playerData, "crouchMove");
+        PrimaryAttackState = new PlayerAttackState(this, StateMachine, playerData, "attack");
+        PrimaryAttackState = new PlayerAttackState(this, StateMachine, playerData, "attack");
+        SecondaryAttackState = new PlayerAttackState(this, StateMachine, playerData, "attack");
 
     }
 
@@ -79,8 +84,14 @@ public class Player : MonoBehaviour
         RB = GetComponent<Rigidbody2D>();
         DashDirectionIndicator = transform.Find("DashDirectionIndicator");
         MovementCollider = GetComponent<BoxCollider2D>();
+        Inventory = GetComponent<PlayerInventory>();
+
 
         FacingDirection = 1;
+
+        PrimaryAttackState.Setweapon(Inventory.weapons[(int)CombatInputs.primaty]);
+        //SecondaryAttackState.Setweapon(Inventory.weapons[(int)CombatInputs.secondary]);
+
         StateMachine.Initialize(IdelState);
     }
 

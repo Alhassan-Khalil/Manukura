@@ -83,8 +83,15 @@ public class PlayerInAirState : PlayerState
 
         CheckJumpMultipler();
 
-
-        if (Isgrounded && player.CurrentVelocity.y < 0.01f)
+        if (player.InputHandler.AttackInputs[(int)CombatInputs.primaty])
+        {
+            stateMachine.ChangeState(player.PrimaryAttackState);
+        }
+        else if (player.InputHandler.AttackInputs[(int)CombatInputs.primaty])
+        {
+            stateMachine.ChangeState(player.SecondaryAttackState);
+        }
+        else if (Isgrounded && player.CurrentVelocity.y < 0.01f)
         {
             stateMachine.ChangeState(player.LandState);
         }
