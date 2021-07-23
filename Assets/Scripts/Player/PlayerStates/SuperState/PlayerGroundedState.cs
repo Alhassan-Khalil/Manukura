@@ -22,10 +22,10 @@ public class PlayerGroundedState : PlayerState
     public override void DoCheck()
     {
         base.DoCheck();
-        Isgrounded = player.CheckIfGrounded();
-        IsTouchingWall = player.CheckIfTouchingWall();
-        IsTouchingLedge = player.CheckIfTouchingLedge();
-        IsTouchingCeiling = player.CheckForCeiling();
+        Isgrounded = core.CollisionSenses.Ground;
+        IsTouchingWall = core.CollisionSenses.WallFront;
+        IsTouchingLedge = core.CollisionSenses.Ledge;
+        IsTouchingCeiling = core.CollisionSenses.Ceiling;
 
     }
 
@@ -52,7 +52,15 @@ public class PlayerGroundedState : PlayerState
         GrabInput = player.InputHandler.GrabInput;
         DashInput = player.InputHandler.DashInput;
 
-        if (JumpInput && player.JumpState.CanJump() )
+        if (player.InputHandler.AttackInputs[(int)CombatInputs.primaty] && !IsTouchingCeiling)
+        {
+            stateMachine.ChangeState(player.PrimaryAttackState);
+        }
+        else if (player.InputHandler.AttackInputs[(int)CombatInputs.primaty] && !IsTouchingCeiling)
+        {
+            stateMachine.ChangeState(player.SecondaryAttackState);
+        }
+        else if (JumpInput && player.JumpState.CanJump() )
         {
             stateMachine.ChangeState(player.JumpState);
         }

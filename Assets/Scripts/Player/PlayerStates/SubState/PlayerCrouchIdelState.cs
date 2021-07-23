@@ -11,7 +11,7 @@ public class PlayerCrouchIdelState : PlayerGroundedState
     public override void Enter()
     {
         base.Enter();
-        player.SetVelocity0();
+        core.Movement.SetVelocity0();
         player.SetColliderHeight(playerData.crouchColliderHeight);
     }
 
