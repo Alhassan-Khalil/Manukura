@@ -16,14 +16,14 @@ public class WeaponAnimationToWeapon : MonoBehaviour
         weapon.AnimationFinshTrigger();
     }
 
-/*    private void AnimationStartMovementTrigger()
+    private void AnimationStartMovementTrigger()
     {
         weapon.AnimationStartMovementTrigger();
     }
 
     private void AnimationStopMovementTrigger()
     {
-        weapon.AnimationStopMovementTrigger();
+        weapon.AnimationStoptMovementTrigger();
     }
 
     private void AnimationTurnOffFlipTrigger()
@@ -33,12 +33,12 @@ public class WeaponAnimationToWeapon : MonoBehaviour
 
     private void AnimationTurnOnFlipTrigger()
     {
-        weapon.AnimationTurnOnFlipTigger();
+        weapon.AnimationTurnOnFlipTrigger();
     }
 
     private void AnimationActionTrigger()
     {
         weapon.AnimationActionTrigger();
     }
-*/
+
 }
