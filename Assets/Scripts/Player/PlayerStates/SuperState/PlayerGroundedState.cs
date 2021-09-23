@@ -24,7 +24,7 @@ public class PlayerGroundedState : PlayerState
         base.DoCheck();
         Isgrounded = core.CollisionSenses.Ground;
         IsTouchingWall = core.CollisionSenses.WallFront;
-        IsTouchingLedge = core.CollisionSenses.Ledge;
+        IsTouchingLedge = core.CollisionSenses.LedgeHorizontal;
         IsTouchingCeiling = core.CollisionSenses.Ceiling;
 
     }
