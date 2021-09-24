@@ -14,29 +14,29 @@ public class Enemy1 : Entity
     public E1_DeadState deadState { get; private set; }
 
     [SerializeField]
-    private D_IdleState idleStateData;
+    private D_IdleState idleStateData = default;
     [SerializeField]
-    private D_MoveState moveStateData;
+    private D_MoveState moveStateData = default;
     [SerializeField]
-    private D_PlayerDetectedState playerDetectedData;
+    private D_PlayerDetectedState playerDetectedData = default;
     [SerializeField]
-    private D_ChargeState ChargeStateData;
+    private D_ChargeState ChargeStateData = default;
     [SerializeField]
-    private D_LookForPlayerState LookForPlayerData;
+    private D_LookForPlayerState LookForPlayerData = default;
     [SerializeField]
-    private D_MeleeAttackState meleeAttackData;
+    private D_MeleeAttackState meleeAttackData = default;
     [SerializeField]
-    private D_StunState StunStateData;
+    private D_StunState StunStateData = default;
     [SerializeField]
-    private D_DeadState DeadStateData;
+    private D_DeadState DeadStateData = default;
 
 
     [SerializeField]
-    private Transform meleeAttackPos;
+    private Transform meleeAttackPos = default;
 
-    public override void Start()
+    public override void Awake()
     {
-        base.Start();
+        base.Awake();
 
         moveState = new E1_MoveState(this, stateMachine, "move", moveStateData,this);
         idleState = new E1_IdleState(this, stateMachine, "idle", idleStateData, this);

@@ -11,7 +11,7 @@ public class Projectiles : MonoBehaviour
     private float xStartPos;
 
     [SerializeField]
-    private float gravity, damagRadius;
+    private float gravity = default, damagRadius = default;
 
 
     private Rigidbody2D rb;
@@ -20,9 +20,9 @@ public class Projectiles : MonoBehaviour
     private bool hasHitGround;
 
     [SerializeField]
-    private LayerMask whatIsGround, whatIsPlayer;
+    private LayerMask whatIsGround = default, whatIsPlayer = default;
     [SerializeField]
-    private Transform damagePosition;
+    private Transform damagePosition = default;
 
 
     private void Start()

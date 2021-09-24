@@ -5,8 +5,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     #region State Variables
-    [SerializeField]
-    private PlayerData playerData;
     public PlayerStateMachine StateMachine { get; private set; }
     public PlayerIdelState IdelState { get; private set; }
     public PlayerMoveState MoveState { get; private set; }
@@ -25,6 +23,8 @@ public class Player : MonoBehaviour
     public PlayerAttackState PrimaryAttackState { get; private set; }
     public PlayerAttackState SecondaryAttackState { get; private set; }
 
+    [SerializeField]
+    private PlayerData playerData = default;
 
 
     #endregion

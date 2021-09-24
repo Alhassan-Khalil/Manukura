@@ -7,6 +7,8 @@ public class AggressiveWeapon : Weapon
 {
 
     protected SO_AggressiveWeaponData aggressiveWeaponData;
+
+
     private List<IDamageable> detectedDamageable = new List<IDamageable>();
 
 
@@ -44,8 +46,6 @@ public class AggressiveWeapon : Weapon
 
         if (damageable != null)
         {
-
-
             detectedDamageable.Add(damageable);
         }
     }

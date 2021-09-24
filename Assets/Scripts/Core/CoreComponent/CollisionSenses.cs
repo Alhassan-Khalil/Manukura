@@ -76,18 +76,18 @@ public class CollisionSenses : CoreComponent
     public float WallCheckDistance { get => wallCheckDistance; set => wallCheckDistance = value; }
     public LayerMask WhatIsGround { get => whatIsGround; set => whatIsGround = value; }
 
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private Transform wallCheck;
-    [SerializeField] private Transform ledgeCheckHorizontal;
-    [SerializeField] private Transform ledgeCheckVertical;
+    [SerializeField] private Transform groundCheck = default;
+    [SerializeField] private Transform wallCheck = default;
+    [SerializeField] private Transform ledgeCheckHorizontal = default;
+    [SerializeField] private Transform ledgeCheckVertical = default;
 
-    [SerializeField] private Transform ceilingCheck;
+    [SerializeField] private Transform ceilingCheck = default;
 
 
-    [SerializeField] private float groundCheckRadius;
-    [SerializeField] private float wallCheckDistance;
+    [SerializeField] private float groundCheckRadius = default;
+    [SerializeField] private float wallCheckDistance = default;
 
-    [SerializeField] private LayerMask whatIsGround;
+    [SerializeField] private LayerMask whatIsGround = default;
 
     #endregion
 

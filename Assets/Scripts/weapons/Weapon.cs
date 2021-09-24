@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    [SerializeField] protected SO_WeaponData weaponData;
+    [SerializeField] protected SO_WeaponData weaponData = default;
 
     protected Animator baseAimator;
     protected Animator weaponAnimator;

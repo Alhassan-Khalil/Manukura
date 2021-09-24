@@ -28,7 +28,7 @@ public class AttackState : State
         base.Enter();
         entity.atsm.attackState = this;
         isAnimtionFinished = false;
-        entity.SetVelocity(0f);
+        core.Movement.SetVelocityX(0f);
     }
 
     public override void Exit()

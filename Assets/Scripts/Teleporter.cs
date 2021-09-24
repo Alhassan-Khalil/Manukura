@@ -11,7 +11,7 @@ public class Teleporter : MonoBehaviour
     }
 
 
-    [SerializeField] private Transform Destination;
+    [SerializeField] private Transform Destination = default;
     public GameObject ObjTransform;
     bool m_TransitioningGameObjectPresent;
     public TransitionWhen transitionWhen;

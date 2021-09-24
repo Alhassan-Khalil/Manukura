@@ -7,7 +7,7 @@ public class CameraController : MonoBehaviour
 
     private  int X;
 
-    [SerializeField] private Transform player_location;
+    [SerializeField] private Transform player_location = default;
 
     private void Start()
     {

@@ -21,7 +21,7 @@ public class MeleeAttackState : AttackState
         base.Enter();
 
         attackDetails.damageAmount = stateData.attackDamge;
-        attackDetails.position = entity.AliveGO.transform.position;
+        attackDetails.position = entity.transform.position;
 
     }
 

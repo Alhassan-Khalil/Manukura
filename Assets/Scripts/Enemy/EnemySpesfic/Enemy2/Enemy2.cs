@@ -17,31 +17,31 @@ public class Enemy2 : Entity
 
 
     [SerializeField]
-    private D_IdleState idleStateData;
+    private D_IdleState idleStateData = default;
     [SerializeField]
-    private D_MoveState moveStateData;
+    private D_MoveState moveStateData = default;
     [SerializeField]
-    private D_PlayerDetectedState playerDetectedData;
+    private D_PlayerDetectedState playerDetectedData = default;
     [SerializeField]
-    private D_MeleeAttackState meleeAttackStateData;
+    private D_MeleeAttackState meleeAttackStateData = default;
     [SerializeField]
-    private D_LookForPlayerState lookForPlayerStateData;
+    private D_LookForPlayerState lookForPlayerStateData = default;
     [SerializeField]
-    private D_StunState stunStatedata;
+    private D_StunState stunStatedata = default;
     [SerializeField]
-    private D_DeadState deadStateData;
+    private D_DeadState deadStateData = default;
     [SerializeField]
-    public D_DodgeState dodgeStateData;
+    public D_DodgeState dodgeStateData = default;
     [SerializeField]
-    public D_RangedAttackState rangedAttackStateData;
+    public D_RangedAttackState rangedAttackStateData = default;
 
 
     [SerializeField]
-    private Transform meleeAttackPos, rangedAttackPos;
+    private Transform meleeAttackPos = default, rangedAttackPos = default;
 
-    public override void Start()
+    public override void Awake()
     {
-        base.Start();
+        base.Awake();
 
         moveState = new E2_moveState(this, stateMachine, "move", moveStateData, this);
         idleState = new E2_idleState(this, stateMachine, "idle", idleStateData, this);

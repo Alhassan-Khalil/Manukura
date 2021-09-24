@@ -22,14 +22,14 @@ public class PlayerDetectedState : State
         base.DoCheck();
         isPlayerInMinAgruRange = entity.CheckPlayerInMinAgroRange();
         isPlayerInMaxAgruRange = entity.CheckPlayerInMaxAgruRange();
-        isDetectingLedge = entity.CheckLedge();
+        isDetectingLedge = core.CollisionSenses.LedgeVertical;
         performCloseRangeAction = entity.CheckPlayerInCloseRangeAction();
     }
 
     public override void Enter()
     {
         base.Enter();
-        entity.SetVelocity(0f);
+        core.Movement.SetVelocityX(0f);
         performLongRangeAction = false;
     }
 

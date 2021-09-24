@@ -2,8 +2,8 @@
 
 public class CameraConttol2 : MonoBehaviour
 {
-    [SerializeField] private Transform target;
-    [SerializeField] private Vector3 offset;
+    [SerializeField] private Transform target = default;
+    [SerializeField] private Vector3 offset = default;
     [SerializeField] [Range(0.01f, 1f)]
     private float smooth = 0.125f;
    
