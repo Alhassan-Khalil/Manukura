@@ -41,6 +41,8 @@ public class PlayerDetectedState : State
     public override void LogicUpdate()
     {
         base.LogicUpdate();
+        core.Movement.SetVelocityX(0f);
+
         if (Time.time >= startTime + stateData.longRangeActionTime)
         {
             performLongRangeAction = true;

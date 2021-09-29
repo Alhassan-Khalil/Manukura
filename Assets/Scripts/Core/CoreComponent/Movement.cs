@@ -8,6 +8,8 @@ public class Movement : CoreComponent
     public Rigidbody2D RB { get; private set; }
     public int FacingDirection { get; private set; }
     public Vector2 CurrentVelocity { get; private set; }
+    public bool CanSetVelcity { get; set; }
+
     private Vector2 workspace;
 
 
@@ -17,9 +19,10 @@ public class Movement : CoreComponent
 
         RB = GetComponentInParent<Rigidbody2D>();
         FacingDirection = 1;
+        CanSetVelcity = true;
     }
 
-    public void LogicUpdate()
+    public override void LogicUpdate()
     {
         CurrentVelocity = RB.velocity;
     }
@@ -30,34 +33,43 @@ public class Movement : CoreComponent
     {
         angle.Normalize();
         workspace.Set(angle.x * velocity * direction, angle.y * velocity);
-        RB.velocity = workspace;
-        CurrentVelocity = workspace;
+        SetFinalVelocity();
+
     }
 
     public void SetVeloctiydash(float velocity, Vector2 direction)
     {
         workspace = direction * velocity;
-        RB.velocity = workspace;
-        CurrentVelocity = workspace;
+        SetFinalVelocity();
     }
     public void SetVelocityX(float velocity)
     {
         workspace.Set(velocity, CurrentVelocity.y);
-        RB.velocity = workspace;
-        CurrentVelocity = workspace;
+        SetFinalVelocity();
+
     }
     public void SetVelocityY(float velocity)
     {
         workspace.Set(CurrentVelocity.x, velocity);
-        RB.velocity = workspace;
-        CurrentVelocity = workspace;
+        SetFinalVelocity();
+
     }
 
     public void SetVelocity0()
     {
-        RB.velocity = Vector2.zero;
-        CurrentVelocity = Vector2.zero;
+        workspace = Vector2.zero;
+        SetFinalVelocity();
     }
+
+    private void SetFinalVelocity()
+    {
+        if (CanSetVelcity)
+        {
+        RB.velocity = workspace;
+        CurrentVelocity = workspace;
+        }
+    }
+
     public void CheckIfShouldFlip(int xinput)
     {
         if (xinput != 0 && xinput != FacingDirection)

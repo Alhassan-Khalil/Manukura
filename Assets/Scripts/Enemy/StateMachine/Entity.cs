@@ -23,7 +23,7 @@ public class Entity : MonoBehaviour
 
     private float currentHealth;
     private float currentStunResistance;
-    private float lastDamageTime;
+    private float lastDamageTime = default;
 
     private Vector2 velocityWorkSpace;
 
@@ -45,6 +45,7 @@ public class Entity : MonoBehaviour
     }
     public virtual void Update()
     {
+        core.LogicUpdate();
         stateMachine.CurrentState.LogicUpdate();
 
         Anim.SetFloat("yVelocity", core.Movement.RB.velocity.y);
@@ -76,7 +77,7 @@ public class Entity : MonoBehaviour
     }
 
 
-    public virtual void Damage(AttackDetails attackDetails)
+/*    public virtual void Damage(AttackDetails attackDetails)
     {
         lastDamageTime = Time.time;
 
@@ -104,7 +105,7 @@ public class Entity : MonoBehaviour
         {
             isDead = true;
         }
-    }
+    }*/
 
 
     public virtual bool CheckPlayerInMinAgroRange()
