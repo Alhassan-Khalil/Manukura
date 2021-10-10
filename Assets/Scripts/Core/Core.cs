@@ -4,20 +4,63 @@ using UnityEngine;
 
 public class Core : MonoBehaviour
 {
-    public Movement Movement { get; private set; }
-    public CollisionSenses CollisionSenses { get; private set; }
+    public Movement Movement
+    {
+        get => GenericsNotImplemntedError<Movement>.TryGet(movement, transform.parent.name);
+        private set => movement = value;
+    }
+
+
+    public CollisionSenses CollisionSenses
+    {
+        get => GenericsNotImplemntedError<CollisionSenses>.TryGet(collisionSenses, transform.parent.name);
+        private set => collisionSenses = value;
+    }
+
+    public Combat Combat
+    {
+        get => GenericsNotImplemntedError<Combat>.TryGet(combat, transform.parent.name);
+        private set => combat = value;
+    }
+
+    public Stats Stats
+    {
+        get => GenericsNotImplemntedError<Stats>.TryGet(stats, transform.parent.name);
+        private set => stats = value;
+    }
+
+
+
+    private Movement movement;
+    private CollisionSenses collisionSenses;
+    private Combat combat;
+    private Stats stats;
+
+    //list of ilogicupdate object.
+    private List<ILogicUpdate> components = new List<ILogicUpdate>();
 
     private void Awake()
     {
         Movement = GetComponentInChildren<Movement>();
         CollisionSenses = GetComponentInChildren<CollisionSenses>();
-        if (!Movement || !CollisionSenses)
-        {
-            Debug.LogError("Missing core Component");
-        }
+        Combat = GetComponentInChildren<Combat>();
+        stats = GetComponentInChildren<Stats>();
     }
     public void LogicUpdate()
     {
-        Movement.LogicUpdate();
+        foreach (ILogicUpdate component in components)
+        {
+            component.LogicUpdate();
+        }
+
     }
+
+    public void AddComponent(ILogicUpdate component)
+    {
+        if (!components.Contains(component))
+        {
+            components.Add(component);
+        }
+    }
+
 }

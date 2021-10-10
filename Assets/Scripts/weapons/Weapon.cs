@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    [SerializeField] protected SO_WeaponData weaponData;
+    [SerializeField] protected SO_WeaponData weaponData = default;
 
     protected Animator baseAimator;
     protected Animator weaponAnimator;
+
+    protected Core core;
 
     protected PlayerAttackState state;
     protected int attackCounter;
@@ -77,8 +79,9 @@ public class Weapon : MonoBehaviour
 
     #endregion
 
-    public void InitializeWeapon(PlayerAttackState state)
+    public void InitializeWeapon(PlayerAttackState state, Core core)
     {
         this.state = state;
+        this.core = core;
     }
 }
