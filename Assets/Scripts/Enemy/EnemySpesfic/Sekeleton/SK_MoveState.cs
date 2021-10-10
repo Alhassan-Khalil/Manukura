@@ -23,6 +23,18 @@ public class SK_MoveState : MoveState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
+
+        if (isPlayerInMinAgruRange)
+        {
+            stateMachine.ChangeState(skeleton.playerDetectedState);
+        }
+        else if (isDetectingWall || !isDetectingLedge)
+        {
+            skeleton.idleState.SetFlipAfterIdle(true);
+            stateMachine.ChangeState(skeleton.idleState);
+        }
+
+
     }
 
     public override void PhysicsUpdate()

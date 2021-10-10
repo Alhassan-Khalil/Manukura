@@ -6,7 +6,7 @@ public class Stats : CoreComponent
 {
 
 
-    [SerializeField] private float maxHealth;
+    [SerializeField] private float maxHealth = default;
 
     private float currentHealth;
 
